@@ -46,8 +46,8 @@
         .image-placeholder {
             width: 100%;
             height: 300px; /* Altura fija para el placeholder */
-            background-color: #333;
-            color: white;
+            background-color: #f0f0f0; /* Fondo gris claro neutro */
+            color: #333; /* Texto oscuro */
             display: flex;
             align-items: center;
             justify-content: center;
@@ -60,9 +60,9 @@
             background-position: center;
         }
         /* Imágenes conceptuales para visualización premium */
-        #hero-image { background-image: url('https://placehold.co/1200x600/1e293b/ffffff?text=Espect%C3%A1culo+de+Drones+en+la+Noche'); }
-        #concepto-image { background-image: url('https://placehold.co/800x400/374151/ffffff?text=Experiencia+Inmersiva+360%C2%BA'); }
-        #estrategia-image { background-image: url('https://placehold.co/800x400/4f46e5/ffffff?text=Visual+Koalitic+de+Alto+Impacto'); }
+        #hero-image { background-image: url('https://placehold.co/1200x600/f0f0f0/333333?text=Espect%C3%A1culo+de+Drones'); }
+        #concepto-image { background-image: url('https://placehold.co/800x400/f0f0f0/333333?text=Experiencia+Inmersiva+360%C2%BA'); }
+        #estrategia-image { background-image: url('https://placehold.co/800x400/f0f0f0/333333?text=Visual+Koalitic+de+Alto+Impacto'); }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
@@ -551,8 +551,23 @@
     </main>
 
     <footer class="bg-gray-900 text-gray-400 py-8">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p>&copy; 2025. Propuesta confidencial preparada para Neuragroup (Proyecto Inari).</p>
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <!-- Copyright -->
+                <p class="text-sm text-center md:text-left">&copy; 2025. Propuesta confidencial preparada para Neuragroup (Proyecto Inari).</p>
+                
+                <!-- Agency Credit -->
+                <div class="flex items-center gap-3">
+                    <p class="text-sm font-medium">Propuesta creada por:</p>
+                    <a href="#" target="_blank" rel="noopener noreferrer" title="Kreato Studio">
+                        <!-- 
+                          He usado un placeholder que imita la estética de tu logo (fondo oscuro, texto dorado/claro) 
+                          para que encaje con el diseño del footer.
+                        -->
+                        <img src="https://placehold.co/130x50/1e293b/d4af37?text=KREATO+STUDIO&font=inter" alt="Kreato Studio Logo" class="h-10 rounded-sm">
+                    </a>
+                </div>
+            </div>
         </div>
     </footer>
 
