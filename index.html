@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Chosen Palette: Premium Neutral (White, Gray-900, Indigo-600) -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propuesta de Lanzamiento Digital: Inari</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chart.js eliminado ya que la sección de presupuesto fue eliminada -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Merriweather:wght@300;400;700&display=swap');
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa;
+            color: #212529;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Merriweather', serif;
+            font-weight: 700;
+        }
+        .tab-button.active {
+            border-color: #4f46e5;
+            color: #4f46e5;
+            background-color: #eef2ff;
+        }
+        /* --- ANIMATION STYLES --- */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 25px -5px rgba(0, 0, 0, 0.1), 0 5px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .image-placeholder {
+            width: 100%;
+            height: 300px; /* Altura fija para el placeholder */
+            background-color: #333;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            text-align: center;
+            border-radius: 0.5rem;
+            margin-bottom: 2rem;
+            overflow: hidden;
+            background-size: cover;
+            background-position: center;
+        }
+        /* Imágenes conceptuales para visualización premium */
+        #hero-image { background-image: url('https://placehold.co/1200x600/1e293b/ffffff?text=Espect%C3%A1culo+de+Drones+en+la+Noche'); }
+        #concepto-image { background-image: url('https://placehold.co/800x400/374151/ffffff?text=Experiencia+Inmersiva+360%C2%BA'); }
+        #estrategia-image { background-image: url('https://placehold.co/800x400/4f46e5/ffffff?text=Visual+Koalitic+de+Alto+Impacto'); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <main>
+        <section id="hero" class="bg-white py-20 md:py-32">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-4 fade-up is-visible" style="transition-delay: 0.1s;">Propuesta de Lanzamiento Digital</h1>
+                <h2 class="text-3xl md:text-5xl font-bold text-indigo-600 mb-6 fade-up is-visible" style="transition-delay: 0.3s;">Proyecto: INARI</h2>
+                <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto fade-up is-visible" style="transition-delay: 0.5s;">Creando una marca premium de espectáculos inmersivos 360º con drones, posicionada en el lujo, la innovación y la exclusividad. </p>
+            </div>
+            <!-- IMAGEN DE IMPACTO EN HERO -->
+            <div id="hero-image" class="image-placeholder max-w-6xl mx-auto mt-12 fade-up is-visible" style="transition-delay: 0.7s;">
+            </div>
+        </section>
+
+        <section id="concepto" class="py-16 md:py-24 bg-gray-50 fade-up">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Entendiendo el Concepto Inari</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">Inari no es solo un espectáculo de drones. Es una experiencia 360º premium, sensorial e inmersiva que redefine el entretenimiento de lujo.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200 card-hover">
+                        <h3 class="text-xl font-bold text-indigo-600 mb-3">Posicionamiento: Lujo</h3>
+                        <p class="text-gray-700">Enfocado al segmento de alto standing. Clientes como marcas premium, bodas de lujo y eventos top en Andorra, España y Europa.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200 card-hover">
+                        <h3 class="text-xl font-bold text-indigo-600 mb-3">Experiencia: Inmersiva 360º</h3>
+                        <p class="text-gray-700">Integración total de música, iluminación y elementos interactivos. Una visión a largo plazo hacia "bosques de luces" e instalaciones sensoriales.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200 card-hover">
+                        <h3 class="text-xl font-bold text-indigo-600 mb-3">Diferenciación: Expertise</h3>
+                        <p class="text-gray-700">Capacidad técnica "la más top", combinada con un profundo conocimiento en normativa aérea y un enfoque absoluto en la seguridad técnica.</p>
+                    </div>
+                </div>
+                <!-- IMAGEN EN CONCEPTO -->
+                <div id="concepto-image" class="image-placeholder max-w-6xl mx-auto mt-12"> 
+                </div>
+            </div>
+        </section>
+
+        <section id="estrategia" class="py-16 md:py-24 bg-white fade-up">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Estrategia Digital 360°: El Desafío</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">El objetivo es lanzar la marca Inari desde cero, creando una presencia digital disruptiva que genere impacto y posicionamiento premium antes de Navidad.</p>
+                </div>
+
+                <div class="max-w-4xl mx-auto space-y-8">
+                    <div class="bg-indigo-50 p-6 rounded-lg border border-indigo-200 card-hover">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Pilar 1: Branding y Storytelling</h3>
+                        <p class="text-gray-700">Construiremos una narrativa que comunique innovación, exclusividad y creatividad, sin perder el enfoque premium. Traduciremos los diferenciadores (seguridad, técnica) en mensajes potentes de confianza y vanguardia.</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 card-hover">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Pilar 2: Posicionamiento Visual (Estilo Koalitic)</h3>
+                        <p class="text-gray-700">Inspirados en referentes como Koalitic, crearemos una línea visual de alto impacto. Contenido disruptivo, moderno y de calidad cinematográfica que transmita lujo y genere viralidad en Instagram, TikTok y YouTube Shorts.</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 card-hover">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Pilar 3: Contenido de Tendencia y Viral</h3>
+                        <p class="text-gray-700">Ideación y producción constante de contenido ágil (Reels, TikToks, Shorts) que siga las tendencias digitales, adaptándolas siempre al tono de lujo de Inari. El objetivo es la viralidad controlada para un rápido posicionamiento.</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg border border-gray-200 card-hover">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Pilar 4: Partnerships Estratégicos</h3>
+                        <p class="text-gray-700">Colaboración con creadores de contenido y marcas alineadas con el segmento lujo. Buscamos validación externa y alcance a audiencias cualificadas (ej. wedding planners de lujo, event managers).</p>
+                    </div>
+                </div>
+                <!-- IMAGEN EN ESTRATEGIA -->
+                <div id="estrategia-image" class="image-placeholder max-w-6xl mx-auto mt-12"> 
+                </div>
+            </div>
+        </section>
+
+        <section id="servicios" class="py-16 md:py-24 bg-gray-50 fade-up">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Servicios Propuestos</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">Un desglose detallado de las acciones que ejecutaremos para construir y lanzar la marca Inari.</p>
+                </div>
+                
+                <div id="services-tabs" class="max-w-4xl mx-auto">
+                    <div class="border-b border-gray-300 mb-6">
+                        <nav class="-mb-px flex flex-wrap" aria-label="Tabs">
+                            <button class="tab-button active w-1/2 md:w-auto text-center md:text-left whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm" data-target="#service-tab-1" role="tab" aria-selected="true">
+                                1. Branding y Estrategia
+                            </button>
+                            <button class="tab-button w-1/2 md:w-auto text-center md:text-left whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm" data-target="#service-tab-2" role="tab" aria-selected="false">
+                                2. Gestión de Redes
+                            </button>
+                            <button class="tab-button w-1/2 md:w-auto text-center md:text-left whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm" data-target="#service-tab-3" role="tab" aria-selected="false">
+                                3. Producción Visual
+                            </button>
+                            <button class="tab-button w-1/2 md:w-auto text-center md:text-left whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm" data-target="#service-tab-4" role="tab" aria-selected="false">
+                                4. Partnerships y Campañas
+                            </button>
+                        </nav>
+                    </div>
+                    
+                    <div class="bg-white p-6 md:p-8 rounded-lg shadow-sm border border-gray-200 min-h-[300px]">
+                        <div id="service-tab-1" role="tabpanel">
+                            <h3 class="text-2xl font-bold text-indigo-600 mb-4">Estrategia de Branding y Storytelling</h3>
+                            <p class="text-gray-700 mb-4">Definición de la identidad verbal y visual de Inari. Creación del "brand book" digital y el "storytelling" central enfocado en la "experiencia inmersiva de lujo".</p>
+                            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                                <li>Análisis de competencia y definición de territorio de marca.</li>
+                                <li>Creación de pilares de contenido (Innovación, Lujo, Seguridad, Magia).</li>
+                                <li>Definición del tono de voz: exclusivo, innovador pero cercano.</li>
+                                <li>Diseño de plantillas y línea gráfica para redes sociales.</li>
+                            </ul>
+                        </div>
+                        <div id="service-tab-2" role="tabpanel" class="hidden">
+                            <h3 class="text-2xl font-bold text-indigo-600 mb-4">Creación y Gestión de Redes (Instagram, TikTok y YouTube)</h3>
+                            <p class="text-gray-700 mb-4">Lanzamiento y gestión diaria de los perfiles de Inari. Creación de calendarios de contenido y optimización de piezas para formatos cortos y largos.</p>
+                            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                                <li>Configuración y optimización de perfiles de IG, TikTok y YouTube.</li>
+                                <li>Planificación de parrilla de contenidos mensual, incluyendo Shorts y contenido "Evergreen".</li>
+                                <li>Publicación y "community management" proactivo.</li>
+                                <li>Monitorización de métricas y reporte de "performance".</li>
+                            </ul>
+                        </div>
+                        <div id="service-tab-3" role="tabpanel" class="hidden">
+                            <h3 class="text-2xl font-bold text-indigo-600 mb-4">Producción Audiovisual y Contenido Viral</h3>
+                            <p class="text-gray-700 mb-4">El corazón de la estrategia. Producción de alta calidad alineada con la estética Koalitic para generar impacto y deseo.</p>
+                            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                                <li>Ideación y guionización de piezas virales (Reels/TikToks/Shorts).</li>
+                                <li>Producción audiovisual de alta calidad (vídeo y foto).</li>
+                                <li>Edición y postproducción "motion graphics" de alto impacto.</li>
+                                <li>Creación de un banco de contenido inicial antes del lanzamiento.</li>
+                            </ul>
+                        </div>
+                        <div id="service-tab-4" role="tabpanel" class="hidden">
+                            <h3 class="text-2xl font-bold text-indigo-600 mb-4">Partnerships y Campañas de Marketing</h3>
+                            <p class="text-gray-700 mb-4">Amplificación del mensaje a través de colaboraciones estratégicas y campañas de pago para acelerar el posicionamiento.</p>
+                            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                                <li>Identificación y contacto con creadores y marcas de lujo.</li>
+                                <li>Gestión de colaboraciones (ej. "drones en boda de lujo").</li>
+                                <li>Creación y gestión de campañas de "paid media" (Ads) en IG/TT.</li>
+                                <li>Estrategia de posicionamiento para captar los primeros "leads" B2B.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="timeline" class="py-16 md:py-24 bg-white fade-up">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Timeline de Lanzamiento</h2>
+                    <p class="text-lg text-gray-600 max-w-2xl mx-auto">Un plan de acción intensivo para tener la marca activa y generando impacto antes de Navidad.</p>
+                </div>
+
+                <div id="timeline-tabs" class="max-w-4xl mx-auto">
+                    <div class="border-b border-gray-300 mb-6">
+                        <nav class="-mb-px flex flex-wrap" aria-label="Tabs">
+                            <button class="tab-button active w-1/2 md:w-auto text-center md:text-left whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm" data-target="#timeline-tab-1" role="tab" aria-selected="true">
+                                Fase 1: Kick-off (Sem 1-2)
+                            </button>
+                            <button class="tab-button w-1/2 md:w-auto text-center md:text-left whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm" data-target="#timeline-tab-2" role="tab" aria-selected="false">
+                                Fase 2: Producción (Sem 3-4)
+                            </button>
+                            <button class="tab-button w-1/2 md:w-auto text-center md:text-left whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm" data-target="#timeline-tab-3" role="tab" aria-selected="false">
+                                Fase 3: Lanzamiento (Sem 5-6)
+                            </button>
+                            <button class="tab-button w-1/2 md:w-auto text-center md:text-left whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm" data-target="#timeline-tab-4" role="tab" aria-selected="false">
+                                Fase 4: Expansión (Enero+)
+                            </button>
+                        </nav>
+                    </div>
+                    
+                    <div class="bg-white p-6 md:p-8 rounded-lg shadow-sm border border-gray-200 min-h-[300px]">
+                        <div id="timeline-tab-1" role="tabpanel">
+                            <h3 class="text-2xl font-bold text-indigo-600 mb-4">Fase 1: Estrategia y Branding (Semanas 1-2)</h3>
+                            <p class="text-gray-700 mb-4">Inmersión total y definición de la hoja de ruta.</p>
+                            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                                <li>Reunión de "kick-off" y alineación de objetivos.</li>
+                                <li>Entrega de la Estrategia de Branding y Storytelling.</li>
+                                <li>Creación del "Brand Book" digital y línea gráfica.</li>
+                                <li>Configuración de perfiles en IG, TikTok y YouTube.</li>
+                            </ul>
+                        </div>
+                        <div id="timeline-tab-2" role="tabpanel" class="hidden">
+                            <h3 class="text-2xl font-bold text-indigo-600 mb-4">Fase 2: Creación de Contenido (Semanas 3-4)</h3>
+                            <p class="text-gray-700 mb-4">Producción del banco de contenido inicial para un lanzamiento potente.</p>
+                            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                                <li>Jornadas de grabación y producción audiovisual (estilo Koalitic).</li>
+                                <li>Edición y postproducción de las primeras 10-15 piezas (Reels/TikToks/Shorts).</li>
+                                <li>Diseño de gráficas estáticas y "carousels".</li>
+                                <li>Aprobación del calendario de contenidos de lanzamiento.</li>
+                            </ul>
+                        </div>
+                        <div id="timeline-tab-3" role="tabpanel" class="hidden">
+                            <h3 class="text-2xl font-bold text-indigo-600 mb-4">Fase 3: Lanzamiento (Semanas 5-6 | Pre-Navidad)</h3>
+                            <p class="text-gray-700 mb-4">¡Salimos al aire! El objetivo es tener las redes activas y con contenido antes de Navidad.</p>
+                            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                                <li>Lanzamiento oficial de los perfiles de Inari.</li>
+                                <li>Publicación de las primeras piezas de alto impacto.</li>
+                                <li>Inicio del "community management" activo.</li>
+                                <li>Lanzamiento de la primera campaña de "paid media" para visibilidad.</li>
+                            </ul>
+                        </div>
+                        <div id="timeline-tab-4" role="tabpanel" class="hidden">
+                            <h3 class="text-2xl font-bold text-indigo-600 mb-4">Fase 4: Optimización y Expansión (Enero 2025+)</h3>
+                            <p class="text-gray-700 mb-4">Coincidiendo con el lanzamiento en España, escalamos la estrategia.</p>
+                            <ul class="list-disc list-inside text-gray-700 space-y-2">
+                                <li>Análisis de las primeras métricas y optimización.</li>
+                                <li>Inicio de la estrategia de Partnerships (creadores y marcas).</li>
+                                <li>Producción de contenido mensual (gestión continua).</li>
+                                <li>Campañas de posicionamiento enfocadas al mercado español.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Presupuesto Eliminada -->
+
+        <section id="next-steps" class="py-16 md:py-24 bg-indigo-600 text-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-6">Conclusión y Próximos Pasos</h2>
+                <p class="text-xl text-indigo-100 max-w-3xl mx-auto mb-8">Esta propuesta representa el camino más rápido y con mayor impacto para posicionar a INARI como la marca líder en espectáculos de drones de lujo. La ejecución de este plan garantizará una presencia digital disruptiva, viralidad controlada y la base de clientes premium que necesita el proyecto.</p>
+                <p class="text-2xl font-bold mt-8">Estamos listos para el "kick-off".</p>
+                <!-- Botón de CTA eliminado a petición del usuario -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-gray-400 py-8">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p>&copy; 2025. Propuesta confidencial preparada para Neuragroup (Proyecto Inari).</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // Lógica de pestañas para Servicios y Timeline
+            function setupTabs(containerId) {
+                const container = document.getElementById(containerId);
+                if (!container) return;
+
+                const tabButtons = container.querySelectorAll('[role="tab"]');
+                const tabPanels = container.querySelectorAll('[role="tabpanel"]');
+
+                tabButtons.forEach(button => {
+                    button.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        
+                        tabButtons.forEach(btn => {
+                            btn.classList.remove('active');
+                            btn.setAttribute('aria-selected', 'false');
+                        });
+                        
+                        button.classList.add('active');
+                        button.setAttribute('aria-selected', 'true');
+                        
+                        const targetPanelId = button.getAttribute('data-target');
+                        
+                        tabPanels.forEach(panel => {
+                            if ('#' + panel.id === targetPanelId) {
+                                panel.classList.remove('hidden');
+                            } else {
+                                panel.classList.add('hidden');
+                            }
+                        });
+                    });
+                });
+            }
+
+            setupTabs('services-tabs');
+            setupTabs('timeline-tabs');
+
+
+            // --- ANIMATION JAVASCRIPT: Intersection Observer ---
+            const sections = document.querySelectorAll('section.fade-up, .fade-up');
+
+            // Handle Hero text separately for a faster initial animation
+            const heroElements = document.querySelectorAll('#hero .fade-up:not(.is-visible)');
+            heroElements.forEach(el => el.classList.remove('fade-up'));
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                // Trigger the animation when 10% of the element is visible
+                threshold: 0.1 
+            });
+
+            sections.forEach(section => {
+                observer.observe(section);
+            });
+            // --- END ANIMATION JAVASCRIPT ---
+        });
+    </script>
+</body>
+</html>
